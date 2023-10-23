@@ -1,8 +1,8 @@
 const Appointment = require('../models/appointment');
 const sms = require('../models/twilio');
 const twilio = require('twilio');
-const accountSid = 'AC18d59b9ac1675efe84d5e5f993cb9281';
-const authToken = '4fb4032e6a063f0d6eae2597deb90ad5';
+const accountSid = 'XXXXXXXXX';
+const authToken = 'XXXXXXXXX';
 
 exports.rendezVous = async (req, res) => {
   const { nom, prenom } = req.body;
