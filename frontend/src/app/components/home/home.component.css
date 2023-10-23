@@ -1,0 +1,94 @@
+.hero-header {
+    position: relative;
+    background: url('https://img.freepik.com/photos-gratuite/femmes-enceintes-concept-beaute-heureux-tendre-jolie-blonde-jeune-femme-femme-attend-enfant-tenir_1258-93657.jpg?w=1380&t=st=1684370829~exp=1684371429~hmac=41a27a368453e9ec7b5e4513fb3d831d6fee6ccd8b8cec219f34a222dac999ad') top right no-repeat;
+    background-size: cover;
+}
+.ico {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+  }
+.b
+{background-color:#d382828d !important}
+.section {
+	position: relative;
+	height: 100vh;
+}
+
+.container-fluid {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.border-bottom {
+  border-bottom: 0.25rem solid;
+}
+
+.text-black {
+  color: #000;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
+.row {
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+}
+
+.g-5 > .col-xl-4,
+.g-5 > .col-lg-6 {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.p-4 {
+  padding: 1.5rem;
+}
+
+.h3 {
+  font-size: 1.75rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+

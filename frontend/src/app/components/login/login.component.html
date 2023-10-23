@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h2 class="login-title">Login</h2>
+      <form class="login-form"  [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" formControlName="userName" required>
+          <div *ngIf="submitted && f['userName'].errors" class="error-message">
+            Username is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password"  formControlName="password" required>
+          <div *ngIf="submitted && f['password'].errors" class="error-message">
+            Password is required
+          </div>
+        </div>
+        <button type="submit" class="login-button"><span *ngIf="loading"></span>Login</button>
+        <div *ngIf="error" class="error-message">{{ error }}</div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+

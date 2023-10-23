@@ -1,0 +1,58 @@
+
+.password-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-image: url('https://img.freepik.com/photos-gratuite/gros-trombone-espace-copie_23-2148539078.jpg?w=1060&t=st=1685465565~exp=1685466165~hmac=e68e058b90fb47c07dca6be91f34f513992779086a49ef73e7a56b3ef6045665');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    position: center; 
+     margin-top: 10% ;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    font-family: 'Your Custom Font', sans-serif; /* Replace 'Your Custom Font' with the name of your custom font */
+    font-size: 18px;
+    color: #333; /* Custom color */
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Your Custom Font', sans-serif; /* Replace 'Your Custom Font' with the name of your custom font */
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Custom border color */
+  }
+  
+  .alert {
+    margin-top: 20px;
+    font-family: 'Your Custom Font', sans-serif; /* Replace 'Your Custom Font' with the name of your custom font */
+    font-size: 16px;
+    color: rgb(78, 76, 78); /* Custom color */
+  }
+  
+  .btn-primary {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-family: 'Your Custom Font', sans-serif; /* Replace 'Your Custom Font' with the name of your custom font */
+    background-color: #ff0084; /* Custom background color */
+    color: #fff; /* Custom text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color:#ff0084; /* Custom hover background color */
+  }
+  

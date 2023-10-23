@@ -1,0 +1,119 @@
+.pos{
+    text-align: right;
+}
+#logout{
+    color: #fafcfa;
+    font-size: 15px;
+}
+#tit{
+    font-size: 20px;
+}
+#tit1{
+    font-size: 14px;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    color: rgba(0, 0, 0, 0.675);
+
+  }
+  .ico {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+  }
+a{
+    color: white;
+}
+.formbold-btn {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #f15ba1;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+      body{color: #000;overflow-x: hidden;height: 100%;}.card{padding: 30px 40px;margin-top: 60px;margin-bottom: 60px;border: none !important;box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2)}.blue-text{color: #00BCD4}.form-control-label{margin-bottom: 0}input, textarea, button{padding: 8px 15px;border-radius: 5px !important;margin: 5px 0px;box-sizing: border-box;border: 1px solid #ccc;font-size: 18px !important;font-weight: 300}input:focus, textarea:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;border: 1px solid #00BCD4;outline-width: 0;font-weight: 400}.btn-block{text-transform: uppercase;font-size: 15px !important;font-weight: 400;height: 43px;cursor: pointer}.btn-block:hover{color: #fff !important}button:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;outline-width: 0}
+      #logout{
+        color: #fafcfa;
+        font-size: 15px;
+    }
+    #tit{
+        font-size: 20px;
+    }
+    #tit1{
+        font-size: 14px;
+    }
+    .icon {
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+      }
+    a{
+        color: white;
+    }
+    .ic {
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+      }
+    a{
+        color: white;
+    }
+    .color{
+        color: rgba(0, 0, 0, 0.66);
+    }
+    .profile-info,
+    .error-info {
+      padding: 10px;
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .profile-info p,
+    .error-info p {
+      margin: 0;
+    }
+    
+    .dropdown-toggle {
+      color: #333;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .dropdown-toggle:hover {
+      color: #555;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+      display: none;
+      min-width: 160px;
+      padding: 5px 0;
+      margin: 2px 0 0;
+      font-size: 14px;
+      text-align: left;
+      list-style: none;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    }
+    
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    

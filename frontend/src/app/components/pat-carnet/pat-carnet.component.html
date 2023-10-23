@@ -1,0 +1,179 @@
+<div class="container">
+    <!-- No data message -->
+    <p *ngIf="Carnet.length <= 0" class="no-data text-center">There is no Carnet added yet!</p>
+  
+    <!-- Carnet list -->
+    <div *ngIf="Carnet.length > 0">
+      <div *ngFor="let carnet of Carnet" class="card">
+        <div class="card-header">
+            <h1 class="text-center"> Carnet de santé de {{patient.nomP}} {{patient.prenomP}}</h1> 
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <div class="card-field">
+                <span class="label">Nom:</span>
+                <p>{{carnet.nom}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Prénom:</span>
+                <p>{{carnet.prenom}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Adresse:</span>
+                <p>{{carnet.adresse}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Naissance:</span>
+                <p>{{carnet.naissance}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Nationalité:</span>
+                <p>{{carnet.nationalite}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">CIN:</span>
+                <p>{{carnet.Cin}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Niveau d'instruction:</span>
+                <p>{{carnet.niv_inst}}</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card-field">
+                <span class="label">Occupation:</span>
+                <p>{{carnet.occupation}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Téléphone:</span>
+                <p>{{carnet.tel}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Couverture médicale:</span>
+                <p>{{carnet.couv}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Numéro de carnet:</span>
+                <p>{{carnet.num_c}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Groupe sanguin:</span>
+                <p>{{carnet.sang}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Rhésus:</span>
+                <p>{{carnet.rhesus}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Type d'allergie:</span>
+                <p>{{carnet.type_allergie}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Allergie déclarée:</span>
+                <p>{{carnet.declaree_allergie}}</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card-field">
+                <span class="label">Traitement en cours:</span>
+                <p>{{carnet.traitement}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Médicaments en cours:</span>
+                <p>{{carnet.med_tret}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Âge de la puberté:</span>
+                <p>{{carnet.age_pub}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Problèmes de santé:</span>
+                <p>{{carnet.prob}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Maladie:</span>
+                <p>{{carnet.maladie}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Maladie familiale:</span>
+                <p>{{carnet.maladieF}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Type de handicap:</span>
+                <p>{{carnet.type_handicap}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Handicap déclaré:</span>
+                <p>{{carnet.declaree_handicap}}</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card-field">
+                <span class="label">Date de vaccin 1:</span>
+                <p>{{carnet.date_vaccin1}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Lieu de vaccin 1:</span>
+                <p>{{carnet.lieu_vaccin1}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Date de vaccin 2:</span>
+                <p>{{carnet.date_vaccin2}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Lieu de vaccin 2:</span>
+                <p>{{carnet.lieu_vaccin2}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Date de vaccin 3:</span>
+                <p>{{carnet.date_vaccin3}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Lieu de vaccin 3:</span>
+                <p>{{carnet.lieu_vaccin3}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Date de vaccin 4:</span>
+                <p>{{carnet.date_vaccin4}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Lieu de vaccin 4:</span>
+                <p>{{carnet.lieu_vaccin4}}</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card-field">
+                <span class="label">Date de vaccin 5:</span>
+                <p>{{carnet.date_vaccin5}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Lieu de vaccin 5:</span>
+                <p>{{carnet.lieu_vaccin5}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Date de rubéole:</span>
+                <p>{{carnet.date_rubeole}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Lieu de rubéole:</span>
+                <p>{{carnet.lieu_rubeole}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Autre vaccin:</span>
+                <p>{{carnet.autre_vaccin}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Nom de la mère:</span>
+                <p>{{carnet.nomM}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Prénom de la mère:</span>
+                <p>{{carnet.prenomM}}</p>
+              </div>
+              <div class="card-field">
+                <span class="label">Téléphone de la mère:</span>
+                <p>{{carnet.telM}}</p>
+              </div>
+            </div>
+          </div>

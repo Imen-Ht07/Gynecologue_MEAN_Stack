@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Certificat Médical</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-EV6zIbtZhN+Z1z4N/v/M/cM9/5ytxa72F5w5MS5ADiLDCfOFmZrtzvIiR43O2QXJ/gY0Ero08HrpLlNxOmJ3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		.stamp {
+			position: absolute;
+			top: 100px;
+			right: 100px;
+			border: 2px solid black;
+			width: 100px;
+			height: 100px;
+			clip-path: polygon(50% 0, 100% 100%, 0 100%);
+			transform: rotate(45deg);
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div style="display: flex; justify-content: space-between;">
+			<h1 style="text-align: left" class="text-black" >Dr Nesrine MACHAT EP. KHALFALLAH</h1>
+			<h1 style="text-align: right" class="text-black" >الدكتورة نسرين مشاط حرم خلف الله</h1> 
+		</div>
+	    <div style="display: flex; justify-content: space-between;">
+			<h3 style="text-align: left" class="text-black" >Spécialiste en gynécologie - obstétrique</h3> 
+			<h3 style="text-align: right" class="text-black" >أخصائية أمراض النساء والتوليد</h3> 
+		</div>
+	</header>
+	<main>
+		<form class="form-card" [formGroup]="ordForm">
+			<div class="col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nabeul, le : <span class="blue">{{ordonnance.date}}</span></label> </div>	
+			
+				<div class=" col-sm-6 ">
+					<label class="form-control-label px-3">Mlle :<span class="blue"> {{ordonnance.nom}}  {{ordonnance.prenom}}</span></label> </div>
+					<div class=" col-sm-6 ">
+						<label class="form-control-label px-3">Traitement: </label><p class="px-5">{{ordonnance.traitement}}</p> </div>
+			<div style="display: flex; justify-content: space-between;">
+				<div class=" col-sm-12 flex-column d-flex">
+					<label class="form-control-label px-3">Cachet du médecin :</label>
+                    <textarea></textarea>
+				</div>
+			</div>
+			
+			<button  class="formbold-btn" (click)="printPage()" id="printButton">
+				Imprimer
+			  </button>
+			  
+			  <style>
+				@media print {
+				  #printButton {
+					display: none;
+				  }
+				}
+			  </style>
+
+		</form>
+	</main>
+	<footer class="footer">
+		<p>عمارة العروس - الطابق 3 شارع الهادي شاكر ـ طريق السينما (امام مونوبري اكسبراس) 8000 نابل</p>
+		<p>Av hedi chaker devant monoprix express ex touta Immeuble larous 3ème étage 8000 Nabeul Tunisie</p>
+		<div>
+			<i class="m-1 fas fa-phone "> <span class="mx-2">36 247 620</span></i>
+			<i class="mx-5 fas fa-mobile-alt"><span class="mx-2">97 550 587</span> </i>
+		</div>
+	</footer>
+</body>
+</html>

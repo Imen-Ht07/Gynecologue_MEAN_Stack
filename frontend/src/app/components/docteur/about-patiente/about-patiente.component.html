@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PFE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="Phoenixcoded" />
+    <!-- Favicon icon -->
+
+    
+    <link rel="icon" href="/assets/admin/images/favicon.ico" type="image/x-icon">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="/assets/admin/css/style.css">
+</head>
+<body style=" background: linear-gradient(80deg, rgba(240,111,167,1) 3%, rgba(130,177,233,1) 100%);" >
+	<!-- [ navigation menu ] start -->
+    <nav class="pcoded-navbar" style="background:linear-gradient(80deg, rgba(130,177,233,1) 0%, rgba(240,111,167,1) 100%)">	
+        	<div class="navbar-wrapper  ">
+			<div class="navbar-content scroll-div " >
+				<div >
+					<div class="main-menu-header">
+						<img class="img-radius" src="/assets/img/gyne.png" alt="User-Profile-Image">
+						<div class="user-details">
+							<div id="more-details" class="text-white">Docteur Nesrine Machat <i class="fa fa-caret-down"></i>
+                            </div>
+						</div>
+					</div>
+				</div>
+<br><br>
+<ul class="nav pcoded-inner-navbar contain "id="tit1">
+  <li class="nav-item">
+      <a href="admin/dashboard" class="nav-link "><span>
+              <img src="../../../../assets/icons/dashboard.png" class="icon"></span>
+              <span class="pcoded-mtext mx-2">Tableau de bord</span></a>
+  </li>
+            
+       <li class="nav-item pcoded-hasmenu">
+          <a href="/admin/listP" class="nav-link "><span>
+             <img src="/assets/icons/consent.png"  class="icon"></span>
+             <span class="pcoded-mtext mx-2"> Patientes</span></a>
+          <ul class="pcoded-submenu">
+              <li><a href="admin/listP" target="_blank">Liste des patientes</a></li>
+          </ul>
+      </li>
+      <li class="nav-item pcoded-hasmenu">
+        <a href="admin/listapp" class="nav-link "><span>
+           <img src="/assets/icons/online.png" class="icon"></span>
+           <span class="pcoded-mtext mx-2"> Demande Rendez-vous</span></a>
+        <ul class="pcoded-submenu">
+            <li><a href="admin/listapp" target="_blank">Consulter les rendez-vous</a></li>
+        </ul>
+<li class="nav-item pcoded-hasmenu">
+    <a href="admin/listR" class="nav-link "><span>
+        <img src="/assets/icons/comments.png" class="icon"></span>
+       <span class="pcoded-mtext mx-2"> Messages</span></a>
+    <ul class="pcoded-submenu">
+        <li><a href="admin/listR" target="_blank">Consulter les messages </a></li>
+    </ul>
+</li>
+<li class="nav-item pcoded-hasmenu">
+    <a href="blog" class="nav-link "><span>
+        <img src="/assets/icons/blog.png" class="icon"></span>
+       <span class="pcoded-mtext mx-2"> Articles</span></a>
+    <ul class="pcoded-submenu">
+        <li><a href="blog" target="_blank">Consulter les articles </a></li>
+    </ul>
+</li>
+<li class="nav-item pcoded-hasmenu">
+    <a href="calender" class="nav-link "><span>
+        <img src="/assets/icons/clock.png" class="icon"></span>
+       <span class="pcoded-mtext mx-2"> calendrier </span></a>
+</li>	
+</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+	<!-- [ Header ] start -->
+  <header class="navbar pcoded-header navbar-expand-lg navbar-light header-blue">
+		<div class="m-header">
+					<a class="mobile-menu" id="mobile-collapse" href="/admin/dashboard"><span></span></a>
+					<a href="#!" class="b-brand">
+						<!-- ========   change your logo hear   ============ -->
+						<img src="/assets/admin/images/logo-icon.png" alt="" class="logo-thumb">
+					</a>
+					<a href="#!" class="mob-toggler" >
+						<i class="feather icon-more-vertical"></i>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav mr-auto">
+                        
+						<li class="nav-item" id="logout">
+							<a href="#!" class="pop-search"><i class="feather icon-search"></i></a>
+							<div class="search-bar">
+								<input type="text" id="m-search" class="form-control"  
+                                placeholder="Rechercher...">
+								<button type="button" class="close" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+                      
+						<li>
+							<div class="dropdown" id="logout">
+                                <img  class="ic mr-1"src="../../../../assets/icons/follower.png">
+								<a class="dropdown-toggle mr-5" href="#" data-toggle="dropdown"><app-profile></app-profile></a>
+								<div class="dropdown-menu dropdown-menu-right notification">
+									<div class="noti-head" >
+										<h6 class="d-inline-block m-b-0"></h6>
+									</div>
+								</div>
+							</div>
+						</li>&nbsp;&nbsp;&nbsp;
+						<li>
+							<div class="dropdown drp-user">
+								<a href="/login" (click)="logOut()" id="logout"
+                                     class="dropdown-toggle" data-toggle="dropdown">
+									<i class="feather icon-log-out"></i>
+								</a>
+							</div>
+						</li>
+                       
+					</ul>
+				</div>
+				
+			
+	</header>
+	<!-- [ Header ] end -->
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content">
+            <!-- [ breadcrumb ] start -->
+            <div class="page-header">
+                <div class="page-block container">
+                    <div class="row align-items-center">
+                        <div class="col-md-12">
+                            <div class="page-header-title">
+                                <h5 class="m-b-10">Patiente</h5>
+                            </div>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/admin/dashboard"><i class="feather icon-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="/admin/listP">Patiente</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ breadcrumb ] end -->
+              <!-- [ Main Content ] start -->
+<div class="container">
+    <div class="row">
+        <h1 class="container my-5 text-center">Espace de la patiente {{patient.nomP}} {{patient.prenomP}}</h1>
+        
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img" src="https://img.freepik.com/vecteurs-libre/illustration-vectorielle-assurance-maladie-concept-abstrait-contrat-assurance-maladie-frais-medicaux-formulaire-demande-reglement-consultation-agent-document-signature-metaphore-abstraite-couverture-urgence_335657-1356.jpg?w=740&t=st=1684182396~exp=1684182996~hmac=4aa6d068d71072913004dc1344424c2a5b784b5cd10f953a03843ae202595910" alt="Card Image">
+            <div class="card-content">
+                <h2 class="card-title">Ordonnance</h2>
+                <button class="card-link"  routerLink="/ord/{{patient._id}}" target="_blank">créer</button>
+                <button class="card-link" routerLink="/ordlist/{{patient._id}}" target="_blank">Consulter</button>
+              </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img" src="https://img.freepik.com/vecteurs-premium/concept-dossier-medical_108855-48.jpg?w=740" alt="Card Image">
+            <div class="card-content">
+              <h2 class="card-title">Carnet</h2>
+              <button class="card-link" routerLink="/create-carnet/{{patient._id}}" target="_blank">créer</button>
+              <button class="card-link" routerLink="/patient/{{patient._id}}" target="_blank">Consulter</button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img" src="https://img.freepik.com/vecteurs-libre/illustration-detaillee-journee-sages-femmes_23-2148894402.jpg?w=740&t=st=1684182330~exp=1684182930~hmac=780a17f05514ef74033f241f9cd14fc73973a0c8d60a78d67a8b3b91e138021d" alt="Card Image">
+            <div class="card-content">
+              <h2 class="card-title">Consultation</h2>
+              <button class="card-link" routerLink="/const/{{patient._id}}" target="_blank">créer</button>
+              <button class=" card-link " routerLink="/const-list/{{patient._id}}" target="_blank">Consulter </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 container">
+        <div class="card">
+          <img class="card-img" src="https://img.freepik.com/vecteurs-libre/illustration-echographie-design-plat-dessine-main_23-2149380909.jpg?w=740&t=st=1684183071~exp=1684183671~hmac=50c6589c0302988d30be3074a10afbf67cd9b5999730ac26de6ee2caab0bd55c" alt="Card Image">
+          <div class="card-content">
+              <h2 class="card-title ">Les echographies</h2>
+              <button class="card-link " routerLink="/eco/{{patient._id}}" target="_blank">Créer</button>
+              <button class="card-link " routerLink="/ecolist/{{patient._id}}" target="_blank">Consulter</button>
+
+            </div>
+        </div>
+      </div>
+  
+      
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+
+
+ 
+
+
+
+        

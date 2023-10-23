@@ -1,0 +1,52 @@
+.example-container  {
+    margin-left: 10px;
+  }
+  .example-form {
+    min-width: 400px;
+    max-width: 500px;
+    width: 50%;
+  }
+  
+  .example-full-width {
+    width: 50%;
+  }
+  .example-card {
+    max-width: 400px;
+  }
+  mat-card {
+    max-width: 400px;
+    margin: 2em auto;
+    text-align: center;
+  }
+  
+  mat-form-field {
+    display: block;
+  }
+  .pos{
+    text-align: right;
+}
+#logout{
+    color: #fafcfa;
+    font-size: 15px;
+}
+#tit{
+    font-size: 20px;
+}
+#tit1{
+    font-size: 14px;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    color: rgba(0, 0, 0, 0.675);
+
+  }
+  .ico {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+  }
+a{
+    color: white;
+}

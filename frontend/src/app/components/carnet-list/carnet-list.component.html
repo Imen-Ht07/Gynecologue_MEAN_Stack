@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PFE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="" />
+<meta name="keywords" content="">
+<meta name="author" content="Phoenixcoded" />
+<!-- Favicon icon -->
+<link rel="icon" href="/assets/admin/images/favicon.ico" type="image/x-icon">
+<!-- vendor css -->
+<link rel="stylesheet" href="/assets/admin/css/style.css">
+</head>
+<body style=" background: linear-gradient(80deg, rgba(240,111,167,1) 3%, rgba(130,177,233,1) 100%);" >
+<!-- [ navigation menu ] start -->
+<nav class="pcoded-navbar" style="background:linear-gradient(80deg, rgba(130,177,233,1) 0%, rgba(240,111,167,1) 100%)">	
+    <div class="navbar-wrapper  ">
+    <div class="navbar-content scroll-div " >
+      <div >
+        <div class="main-menu-header">
+          <img class="img-radius" src="/assets/img/gyne.png" alt="User-Profile-Image">
+          <div class="user-details">
+            <div id="more-details" class="text-white">Docteur Nesrine Machat <i class="fa fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+<br><br>
+<ul class="nav pcoded-inner-navbar contain "id="tit1">
+  <li class="nav-item">
+      <a href="admin/dashboard" class="nav-link "><span>
+              <img src="../../../../assets/icons/dashboard.png" class="icon"></span>
+              <span class="pcoded-mtext mx-2">Tableau de bord</span></a>
+  </li>
+            
+       <li class="nav-item pcoded-hasmenu">
+          <a href="/admin/listP" class="nav-link "><span>
+             <img src="/assets/icons/consent.png"  class="icon"></span>
+             <span class="pcoded-mtext mx-2"> Patientes</span></a>
+          <ul class="pcoded-submenu">
+              <li><a href="admin/listP" target="_blank">Liste des patientes</a></li>
+          </ul>
+      </li>
+      <li class="nav-item pcoded-hasmenu">
+        <a href="admin/listapp" class="nav-link "><span>
+           <img src="/assets/icons/online.png" class="icon"></span>
+           <span class="pcoded-mtext mx-2"> Demande Rendez-vous</span></a>
+        <ul class="pcoded-submenu">
+            <li><a href="admin/listapp" target="_blank">Consulter les rendez-vous</a></li>
+        </ul>
+<li class="nav-item pcoded-hasmenu">
+    <a href="admin/listR" class="nav-link "><span>
+        <img src="/assets/icons/comments.png" class="icon"></span>
+       <span class="pcoded-mtext mx-2"> Messages</span></a>
+    <ul class="pcoded-submenu">
+        <li><a href="admin/listR" target="_blank">Consulter les messages </a></li>
+    </ul>
+</li>
+<li class="nav-item pcoded-hasmenu">
+    <a href="blog" class="nav-link "><span>
+        <img src="/assets/icons/blog.png" class="icon"></span>
+       <span class="pcoded-mtext mx-2"> Articles</span></a>
+    <ul class="pcoded-submenu">
+        <li><a href="blog" target="_blank">Consulter les articles </a></li>
+    </ul>
+</li>
+<li class="nav-item pcoded-hasmenu">
+    <a href="calender" class="nav-link "><span>
+        <img src="/assets/icons/clock.png" class="icon"></span>
+       <span class="pcoded-mtext mx-2"> calendrier </span></a>
+</li>	
+</ul>
+    </div>
+  </div>
+</nav>
+<!-- [ navigation menu ] end -->
+<!-- [ Header ] start -->
+<header class="navbar pcoded-header navbar-expand-lg navbar-light header-blue">
+  <div class="m-header">
+        <a class="mobile-menu" id="mobile-collapse" href="/admin/dashboard"><span></span></a>
+        <a href="#!" class="b-brand">
+          <!-- ========   change your logo hear   ============ -->
+          <img src="/assets/admin/images/logo-icon.png" alt="" class="logo-thumb">
+        </a>
+        <a href="#!" class="mob-toggler" >
+          <i class="feather icon-more-vertical"></i>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+                      
+          <li class="nav-item" id="logout">
+            <a href="#!" class="pop-search"><i class="feather icon-search"></i></a>
+            <div class="search-bar">
+              <input type="text" id="m-search" class="form-control"  
+                              placeholder="Rechercher...">
+              <button type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+                    
+          <li>
+            <div class="dropdown" id="logout">
+                              <img  class="ic mr-1"src="../../../../assets/icons/follower.png">
+              <a class="dropdown-toggle mr-5" href="#" data-toggle="dropdown"><app-profile></app-profile></a>
+              <div class="dropdown-menu dropdown-menu-right notification">
+                <div class="noti-head" >
+                  <h6 class="d-inline-block m-b-0"></h6>
+                </div>
+              </div>
+            </div>
+          </li>&nbsp;&nbsp;&nbsp;
+          <li>
+            <div class="dropdown drp-user">
+              <a href="/login" (click)="logOut()" id="logout"
+                                   class="dropdown-toggle" data-toggle="dropdown">
+                <i class="feather icon-log-out"></i>
+              </a>
+            </div>
+          </li>
+                     
+        </ul>
+      </div>
+      
+    
+</header>
+<!-- [ Header ] end -->
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+  <div class="pcoded-content">
+      <!-- [ breadcrumb ] start -->
+      <div class="page-header container">
+          <div class="page-block ">
+              <div class="row align-items-center">
+                  <div class="col-md-16">
+                      <div class="page-header-title">
+                          <h5 class="m-b-10" id="tit">Carnet de santé</h5>
+                      </div>
+                      <ul class="breadcrumb" id="tit">
+                          <li class="breadcrumb-item"><a href="admin/dashboard"><i class="feather icon-home"></i></a></li>
+                          <li class="breadcrumb-item"><a href="admin/dashboard">Carnet de santé</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+      <div class="container">
+        <!-- No data message -->
+        <p *ngIf="Carnet.length <= 0" class="no-data text-center">There is no Carnet added yet!</p>
+      
+        <!-- Carnet list -->
+        <div *ngIf="Carnet.length > 0">
+          <div *ngFor="let carnet of Carnet" class="card">
+            <div class="card-header">
+                <h1 class="text-center"> Carnet de santé de {{patient.nomP}} {{patient.prenomP}}</h1> 
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <div class="card-field">
+                    <span class="label">Nom:</span>
+                    <p>{{carnet.nom}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Prénom:</span>
+                    <p>{{carnet.prenom}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Adresse:</span>
+                    <p>{{carnet.adresse}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Naissance:</span>
+                    <p>{{carnet.naissance}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Nationalité:</span>
+                    <p>{{carnet.nationalite}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">CIN:</span>
+                    <p>{{carnet.Cin}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Niveau d'instruction:</span>
+                    <p>{{carnet.niv_inst}}</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-field">
+                    <span class="label">Occupation:</span>
+                    <p>{{carnet.occupation}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Téléphone:</span>
+                    <p>{{carnet.tel}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Couverture médicale:</span>
+                    <p>{{carnet.couv}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Numéro de carnet:</span>
+                    <p>{{carnet.num_c}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Groupe sanguin:</span>
+                    <p>{{carnet.sang}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Rhésus:</span>
+                    <p>{{carnet.rhesus}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Type d'allergie:</span>
+                    <p>{{carnet.type_allergie}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Allergie déclarée:</span>
+                    <p>{{carnet.declaree_allergie}}</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-field">
+                    <span class="label">Traitement en cours:</span>
+                    <p>{{carnet.traitement}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Médicaments en cours:</span>
+                    <p>{{carnet.med_tret}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Âge de la puberté:</span>
+                    <p>{{carnet.age_pub}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Problèmes de santé:</span>
+                    <p>{{carnet.prob}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Maladie:</span>
+                    <p>{{carnet.maladie}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Maladie familiale:</span>
+                    <p>{{carnet.maladieF}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Type de handicap:</span>
+                    <p>{{carnet.type_handicap}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Handicap déclaré:</span>
+                    <p>{{carnet.declaree_handicap}}</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-field">
+                    <span class="label">Date de vaccin 1:</span>
+                    <p>{{carnet.date_vaccin1}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Lieu de vaccin 1:</span>
+                    <p>{{carnet.lieu_vaccin1}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Date de vaccin 2:</span>
+                    <p>{{carnet.date_vaccin2}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Lieu de vaccin 2:</span>
+                    <p>{{carnet.lieu_vaccin2}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Date de vaccin 3:</span>
+                    <p>{{carnet.date_vaccin3}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Lieu de vaccin 3:</span>
+                    <p>{{carnet.lieu_vaccin3}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Date de vaccin 4:</span>
+                    <p>{{carnet.date_vaccin4}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Lieu de vaccin 4:</span>
+                    <p>{{carnet.lieu_vaccin4}}</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-field">
+                    <span class="label">Date de vaccin 5:</span>
+                    <p>{{carnet.date_vaccin5}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Lieu de vaccin 5:</span>
+                    <p>{{carnet.lieu_vaccin5}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Date de rubéole:</span>
+                    <p>{{carnet.date_rubeole}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Lieu de rubéole:</span>
+                    <p>{{carnet.lieu_rubeole}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Autre vaccin:</span>
+                    <p>{{carnet.autre_vaccin}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Nom de la medcin:</span>
+                    <p>{{carnet.nomM}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Prénom de la medcin:</span>
+                    <p>{{carnet.prenomM}}</p>
+                  </div>
+                  <div class="card-field">
+                    <span class="label">Téléphone de la medcin:</span>
+                    <p>{{carnet.telM}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col text-center edit-block">
+                  <span class="edit" [routerLink]="['/edit-carnet/', carnet._id]">
+                    <button type="button" class="btn btn-success btn-sm">Edit</button>
+                  </span>
+                  <span class="delete" (click)="onDelete(carnet)">
+                    <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        </div></div>
+</body></html>

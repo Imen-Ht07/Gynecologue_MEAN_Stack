@@ -1,0 +1,80 @@
+#logout{
+    color: #fafcfa;
+    font-size: 15px;
+}
+#tit{
+    font-size: 20px;
+}
+#tit1{
+    font-size: 14px;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+  }
+  .ico {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+  }
+  .ic {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+  }
+a{
+    color: white;
+}
+.color{
+    color: rgba(0, 0, 0, 0.66);
+}
+.profile-info,
+.error-info {
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.profile-info p,
+.error-info p {
+  margin: 0;
+}
+
+.dropdown-toggle {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdown-toggle:hover {
+  color: #555;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  display: none;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}

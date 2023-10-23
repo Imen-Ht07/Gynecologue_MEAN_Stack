@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ordonnance Médicale</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-EV6zIbtZhN+Z1z4N/v/M/cM9/5ytxa72F5w5MS5ADiLDCfOFmZrtzvIiR43O2QXJ/gY0Ero08HrpLlNxOmJ3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+</head>
+<body>
+	<header class="header">
+		<div style="display: flex; justify-content: space-between;">
+			<h1 style="text-align: left" class="text-black" >Dr Nesrine MACHAT EP. KHALFALLAH</h1>
+			<h1 style="text-align: right" class="text-black" >الدكتورة نسرين مشاط حرم خلف الله</h1> 
+		</div>
+	    <div style="display: flex; justify-content: space-between;">
+			<h3 style="text-align: left" class="text-black" >Spécialiste en gynécologie - obstétrique</h3> 
+			<h3 style="text-align: right" class="text-black" >أخصائية أمراض النساء والتوليد</h3> 
+		</div>
+	</header>
+	<main>
+		<form class="form-card" [formGroup]="ordForm" (ngSubmit)="onSubmit()">
+			<input type="date" id="date" name="date" placeholder="" formControlName="date" style="display: none;">
+			<div class="form-group col-sm-6 flex-column d-flex">
+			  <label class="form-control-label px-3">Nabeul, le :<span class="text-danger"></span></label>
+			  <input type="date" id="date" name="date" placeholder="" formControlName="date">
+			</div>
+			<div style="display: flex; justify-content: space-between;">
+			  <div class="form-group col-sm-6 flex-column d-flex">
+				<label class="form-control-label px-3">Nom :<span class="text-danger"></span></label>
+				<input type="text" id="nom" name="nom" placeholder="" formControlName="nom">
+			  </div>
+			  <div class="form-group ml col-sm-6 flex-column d-flex mx-2">
+				<label class="form-control-label px-3 mx-2">Prenom :<span class="text-danger"></span></label>
+				<input type="text" id="prenom" name="prenom" placeholder="" formControlName="prenom">
+			  </div>
+			</div>
+		  
+			<textarea class="form-control form-control-alternative" rows="3" placeholder="Write a large text here ..." formControlName="traitement"></textarea>
+		  
+			<button class="formbold-btn" type="submit">Register</button>
+		  </form>
+		  
+	</main>
+	<footer class="footer">
+		<p>عمارة العروس - الطابق 3 شارع الهادي شاكر ـ طريق السينما (امام مونوبري اكسبراس) 8000 نابل</p>
+		<p>Av hedi chaker devant monoprix express ex touta Immeuble larous 3ème étage 8000 Nabeul Tunisie</p>
+		<div>
+			<i class="m-1 fas fa-phone "> <span class="mx-2">36 247 620</span></i>
+			<i class="mx-5 fas fa-mobile-alt"><span class="mx-2">97 550 587</span> </i>
+		</div>
+	</footer>
+</body>
+</html>

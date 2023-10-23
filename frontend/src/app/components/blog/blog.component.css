@@ -1,0 +1,138 @@
+.pos{
+    text-align: right;
+}
+#logout{
+    color: #fafcfa;
+    font-size: 15px;
+}
+#tit{
+    font-size: 20px;
+}
+#tit1{
+    font-size: 14px;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+  }
+  .ico {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+  }
+a{
+    color: white;
+}
+.ic {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+  }
+a{
+    color: white;
+}
+.color{
+    color: rgba(0, 0, 0, 0.66);
+}
+.profile-info,
+.error-info {
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.profile-info p,
+.error-info p {
+  margin: 0;
+}
+
+.dropdown-toggle {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdown-toggle:hover {
+  color: #555;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  display: none;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+  
+/* Styles for Carnet list */
+.container-custom {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.consultations-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.consultation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1rem;
+  flex: 1 1 30%; /* Adjust the flex basis value as needed */
+}
+
+.consultation-content h5 {
+  margin-bottom: 0.5rem;
+}
+
+.card-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}

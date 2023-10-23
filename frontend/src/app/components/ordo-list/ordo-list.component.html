@@ -1,0 +1,38 @@
+<div class="row">
+    <div  class="col-md-4"  *ngFor="let ordonnance of ordonnances">
+        <header class="header">
+            <div style="display: flex; justify-content: space-between;">
+                <h1 style="text-align: left" class="text-black" >Dr Nesrine MACHAT EP. KHALFALLAH</h1>
+                <h1 style="text-align: right" class="text-black" >الدكتورة نسرين مشاط حرم خلف الله</h1> 
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <h3 style="text-align: left" class="text-black" >Spécialiste en gynécologie - obstétrique</h3> 
+                <h3 style="text-align: right" class="text-black" >أخصائية أمراض النساء والتوليد</h3> 
+            </div>
+        </header>
+        <main> 
+			<div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nabeul, le :<span class="text-danger">{{ordonnance.date}}</span></label> </div>	
+			<div style="display: flex; justify-content: space-between;">
+				<div class="form-group col-sm-6 flex-column d-flex">
+					<label class="form-control-label px-3">Nom :<span class="text-danger"> {{ordonnance.nom}}</span></label>
+					
+				</div>
+				<div class="form-group ml col-sm-6 flex-column d-flex mx-2">
+					<label class="form-control-label px-3 mx-2">Prenom :<span class="text-danger">{{ordonnance.prenom}}</span></label>
+					
+				</div>
+			</div>
+				
+			<p class=" form-control-alternative container" rows="3" >{{ordonnance.traitement}}</p>
+            
+        </main>
+        <footer class="footer">
+            <p>عمارة العروس - الطابق 3 شارع الهادي شاكر ـ طريق السينما (امام مونوبري اكسبراس) 8000 نابل</p>
+            <p>Av hedi chaker devant monoprix express ex touta Immeuble larous 3ème étage 8000 Nabeul Tunisie</p>
+            <div>
+                <i class="m-1 fas fa-phone "> <span class="mx-2">36 247 620</span></i>
+                <i class="mx-5 fas fa-mobile-alt"><span class="mx-2">97 550 587</span> </i>
+            </div>
+        </footer>
+    </div>
+</div>    
